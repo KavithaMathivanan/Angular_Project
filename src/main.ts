@@ -1,3 +1,5 @@
+// @ts-ignore
+
 import { bootstrapApplication } from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
 import { appConfig } from './app/app.config';
@@ -14,10 +16,6 @@ const routes: Routes = [
   {path: '**', component: PageNotFoundComponent}
 
 ];
-@NgModule({
-  imports:[RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
 
 
 bootstrapApplication(AppComponent, appConfig)

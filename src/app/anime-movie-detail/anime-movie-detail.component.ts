@@ -15,7 +15,7 @@ import {AnimeService} from '../anime.service';
   styleUrl: './anime-movie-detail.component.css'
 })
 export class AnimeMovieDetailComponent implements OnInit{
- anime: Anime | undefined;
+ @Input() anime:any;
 
 
   constructor(
